@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.head {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: rgba(250, 250, 250, 0.5);
+    height: 7vh;
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+img {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    left: 1%;
+}
+
+ul li {
+     padding: 5px 10px;
+    cursor: pointer;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+
+}
+
+ul li:hover {
+    background: linear-gradient(#222,#111,#000);
+    box-shadow: 1px 1px 1px white;
+    border-radius: 20px;
+   
+}
+
+body {
+    background: url(../pic/pi.jpg)no-repeat center fixed;
+    background-size: cover;
+}
+
+h1 {
+    background: rgba(255, 0, 0, 0.2);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}

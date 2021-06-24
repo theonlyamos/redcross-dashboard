@@ -1,0 +1,156 @@
+section {
+    width: 100%;
+}
+
+.search-box, .info {
+    max-width: 98%;
+}
+
+.users-box {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+}
+
+.info  {
+    text-align: right;
+    color: white;
+    display: flex;
+    width: 1100px;
+    overflow-x: auto;
+}
+
+.total {
+    padding: 4px 7px;
+    display: flex;
+    background: black;
+}
+
+.search-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+select {
+    padding: 5px;
+    border: 1px solid white;
+    font-family: serif;
+    font-size: 18px;
+    background: rgba(10, 10, 10, 0.2);
+    color: white;
+    text-align: center;
+}
+
+select option {
+    background-color: rgba(10,10,10,0.9);
+}
+
+input, select {
+    width: 30%;
+    margin-bottom: 20px;
+}
+input[type="text"], select{
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    height:40px;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+}
+
+thead tr th {
+    background: linear-gradient(#333,#222);
+    color: white;
+    text-align: center;
+    padding: 8px 4px;
+}
+
+button.search {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: transparent;
+  color: black;
+  border: 2px solid #555555;
+}
+
+button.search:hover {
+  background-color: #555555;
+  color: white;
+}
+
+tbody {
+    background: rgba(200, 200, 200, 0.7);    
+}
+
+tbody tr td {
+    padding: 6px 4px;
+    font-size: 14px;
+    text-align: center;
+}
+
+img.thumbnail {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    position: relative;
+    border-radius: 50%;
+}
+
+a.action,
+a.action:hover,
+a.action:active,
+a.action:link {
+    text-decoration: none;
+}
+
+a.action {
+    padding: 5px;
+    border-radius: 3px;
+}
+
+a.action-delete {
+    color: white;
+    background: linear-gradient(#cc0000,#dd0000);
+    margin-right: 2px;
+}
+
+a.action-profile {
+    background: linear-gradient(#0000c4,#000082);
+    color: white;
+}
+
+a.action-activate {
+    color: white;
+    background: linear-gradient(green,darkgreen);
+    margin-right: 2px;
+}
+
+.active {
+    color: darkblue;
+}
+
+.inactive {
+    color: darkred;
+}
+
+@media screen and (min-width: 720px){
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

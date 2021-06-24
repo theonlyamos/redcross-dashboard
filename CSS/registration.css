@@ -1,0 +1,161 @@
+section.registration-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#registration {
+    width: 100%;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 70px 30px;
+    position: relative;
+    background: rgba(10, 10, 10, 0.7);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.title {
+    width: 100%;
+    background: linear-gradient(#920000, #c20000);
+    text-align: center;
+    color: white;
+
+}
+
+#registration input:not(.in-left), #registration select {
+    width: 100%;
+}
+
+.left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal .left input {
+    width: 100%;
+}
+
+.picture-box {
+    width: 200px;
+    height: 200px;
+    border: 1px dashed grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.picture-box img {
+    cursor: pointer;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    filter: invert(100%);
+}
+
+/*
+
+.modal select {
+    padding: 5px;
+    border: 1px solid white;
+    font-family: serif;
+    font-size: 18px;
+    background: rgba(10, 10, 10, 0.2);
+    color: white;
+    text-align: center;
+}
+
+.modal select option {
+    background-color: rgba(10,10,10,0.9);
+}
+
+*/
+
+.modal input, .modal select {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.modal input[type="text"], .modal input[type="password"], .modal select{
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    height:40px;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+}
+
+.modal .submit{
+    border: none;
+    outline: none;
+    height: 40px;
+    background:#fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.modal .submit:hover{
+    cursor:pointer;
+    background: #ffc107;
+    color: #000;
+}
+
+.gender {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.education {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+h2 {
+    padding: 5px;
+}
+
+.modal .submit {
+    width: 100%;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-family: serif;
+    font-size: 18px;
+    border: 1px solid white;
+    outline: 0;
+    border-radius: 15px;
+    color: white;
+    background: rgba(10, 10, 10, 0.2);
+}
+
+.modal .submit:hover {
+    background: white;
+    color: black;
+}
+
+@media screen and (min-width: 720px){
+    #registration, .title {
+        width: 600px;
+    }
+
+    #registration input:not(.in-left), #registration select {
+        width: 48%;
+    }
+    
+    .left {
+        width: 48%;
+        display: flex;
+        flex-direction: column;
+    }
+}
